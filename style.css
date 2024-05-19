@@ -14,6 +14,10 @@
     font-family: "Assistant", sans-serif;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 header{
     display: flex;
     align-items: center;
@@ -41,11 +45,21 @@ nav > ul a{
     color: var(--theme-font-color);
     font-size: 15px;
     font-weight: 700;
+    transition: 0.2s;
 }
 
 nav > ul > li{
     margin: 0 12px;
     text-transform: uppercase;
+}
+
+nav > ul a:hover{
+    color:var(--theme-red-color);
+}
+
+.container{
+    max-width: 1140px;
+    margin: auto;
 }
 
 .banner{
@@ -157,7 +171,7 @@ nav > ul > li{
     background-color: var(--theme-red-color);
     color: white;
     border: 2px solid white;
-    transform: rotate(90deg) translate(-70px ,-5px) ;
+    transform: rotate(90deg) translate(-80px ,-5px) ;
     padding: 10px 20px;
     font-size: 16px;
     font-weight: 700;
@@ -168,3 +182,352 @@ nav > ul > li{
     border-color: black;
     color: black;
 }
+
+.intro-section h1{
+	text-align: center;
+	padding: 20px 0;
+	color:var(--theme-red-color) ;
+	font-family: sans-serif;
+    font-size: 31px;
+}
+.main{
+	width: 1140px;
+	margin: auto;
+	display: flex;
+	justify-content: space-between;
+}
+
+.img-content img{
+	height: 400px;
+	width: 500px;
+	margin-right: 30px;
+}
+
+.content{
+	font-size: 18px;
+}
+
+.content p{
+	width:80%;
+	line-height: 24px;
+	font-family: sans-serif;
+}
+
+.content p:first-child{
+	text-align: justify;
+}
+
+.content p:last-child{
+	margin-top: 60px;
+}
+
+.key{
+	background-color: #E3E3E3;
+    margin-top: 50px;
+	
+}
+
+.features{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.key h1{
+    padding: 30px 0;
+	text-align: center;
+	font-size: 30px;
+	color: var(--theme-font-color);
+	text-transform: uppercase;
+	font-family: sans-serif;
+	margin-bottom: 25px;
+}
+
+
+.features ul li{
+	color: var(--theme-font-color);
+	font-size: 18px;
+	font-weight: 600;
+	font-family: sans-serif;
+	margin-bottom: 20px;
+	padding-bottom: 10px;
+}
+.features ul li i{
+	margin-right: 10px ;
+	font-size: 20px;
+	color: #ED1C24;
+	line-height: 18px;
+}
+
+.product{
+    margin-top: 50px;
+}
+
+.product h1{
+    padding: 20px 0;
+    text-align: center;
+    font-size: 30px;
+    text-transform: uppercase;
+    color: var(--theme-font-color);
+}
+
+.product p{ 
+    text-align: center;
+    font-size: 15px;
+    font-weight: 500;
+    color: var(--theme-font-color);
+    padding-bottom: 30px;
+}
+
+.product-card{
+    width: 1140px;
+    margin: auto;
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+}
+
+.card1{
+    padding: 0 10px;
+    width: 380px;
+    border-radius: 6px;
+    box-shadow: 0 3px 6px rgba(91, 130, 148, .08);
+    background-color: #fff;
+}
+
+.card1 img{
+    height: auto;
+    width: 100%;
+}
+
+.card1 ul li{
+    border-bottom: 1px solid #F1F1F1;
+    padding: 15px 5px;
+    font-size: 18px;
+    font-weight:700 ;
+}
+
+.card1 ul li i{
+    margin-right: 10px;
+    font-size: 20px; 
+}
+
+.card1 ul li:last-child{
+    border: none;
+    background-color:var(--theme-red-color);
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 15px;
+}
+.card1 ul li:last-child span{
+    font-size: 18px;
+    font-weight:500;
+    color: white;
+}
+.card1 ul li:last-child span i{
+    margin-left: 10px;
+}
+
+.card2{
+    padding: 0 10px;
+    width: 380px;
+    border-radius: 6px;
+    box-shadow: 0 3px 6px rgba(91, 130, 148, .08);
+    background-color: #fff;
+    
+}
+.card2 img{
+    height: auto;
+    width: 100%;
+}
+
+.card2 ul li{
+    border-bottom: 1px solid #F1F1F1;
+    padding: 15px 5px;
+    font-size: 18px;
+    font-weight:700 ;
+}
+.card2 ul li i{
+       margin-right: 10px;
+       font-size: 20px; 
+}
+
+.card2 ul li:last-child{
+    border: none;
+    background-color: #ED1C24;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 15px;
+    color: white;
+}
+.card2 ul li:last-child span{
+    font-size: 18px;
+    font-weight:500;
+    color: white;
+}
+.card2 ul li:last-child span i{
+    margin-left: 10px;
+}
+
+.card1 ul{
+    border-right: 1px solid #F1F1F1;
+    border-left: 1px solid #F1F1F1;
+}
+.card2 ul{
+    border-right: 1px solid #F1F1F1;
+    border-left: 1px solid #F1F1F1;
+}
+
+.card1 ul li:nth-child(5){
+    display: inline-block;
+}
+
+.card1 ul img{
+    height: 30px;
+    width: 30px;
+    margin-left: 15px;
+}
+
+.card2 ul li:nth-child(5){
+    display: inline-block;
+      
+}
+
+.card2 ul img{
+    height: 30px;
+    width: 30px;
+    margin-left:15px;
+}
+
+.aminities{
+    margin-top: 50px;
+    padding-bottom: 30px;
+    background-color: #F1F1F1;
+}
+
+.inner-div{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 20px;
+    padding-top:30px;
+}
+
+.inner-div div{
+    width: 100%;
+    height: 150px;
+    border: 1px solid #fee4e5;
+    border-radius: 6px;
+    background-color: white;
+    box-shadow: 0 3px 6px rgba(91, 130, 148, 0.8);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.inner-div > div > h2{
+    font-size: 18px;
+    padding-top:10px ;
+}
+
+
+.floor-plan{
+    margin-top: 50px;
+}
+.floor-plan h1{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 30px;
+    color: var(--theme-font-color);
+}
+
+.floor-btn{
+    text-align: center;
+}
+
+.floor-btnn{ 
+    margin-top: 20px;
+    padding: 13px 10px;
+    text-align: center;
+    color: white;
+    border: none;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.btn1{
+    background-color: var(--theme-red-color);
+    border-radius: 4px;
+    margin-right:6px;
+}
+
+.btn2{
+    background-color:black;
+    border-radius: 4px;
+    margin-right:6px;
+}
+.btn3{
+    background-color:black;
+    border-radius: 4px;
+    margin-right:6px;
+}
+.btn4{
+    background-color:black;
+    border-radius: 4px;
+}
+
+.floor-btnn:hover{
+    padding: 14px;
+}
+
+.floor-img{
+    text-align:center;
+    margin-top: 50px;
+}
+
+.floor-img img{
+    width: 100%;
+    height: 100%;
+    border-radius: 6px;
+   
+}
+
+.floor-img:hover{
+    box-shadow: 0 0 5px 2px gray;
+    border-radius: 6px;
+    transform: scale(1.01);
+}
+
+.master-plan{
+    margin-top: 50px;
+}
+
+.master-plan h1{
+    font-size: 30px;
+    font-weight: 800;
+    color: var(--theme-font-color);
+    text-align: center;
+}
+
+.master-plan img{
+    text-align: center;
+}
+
+.sample-flat{
+    margin-top: 50px;
+}
+
+.sample-flat h1{
+    font-size: 30px;
+    font-weight: 800;
+    color: var(--theme-font-color);
+    text-align: center;
+}
+
+.sample{
+    margin-top: 30px;
+    
+}
+
